@@ -16,34 +16,34 @@
 
 2. Rendez-vous sur [**cette page**](https://greasyfork.org/scripts/420410-senscritique-philou-edition/code/SensCritique%20-%20Philou%20Edition.user.css) et cliquez sur ***"Installer le style"***
 
-[Gif Rigolo](https://media.tenor.com/images/d22170c90b16dfbf549ea65e1eef4118/tenor.gif)
+![Gif Rigolo](https://media.tenor.com/images/d22170c90b16dfbf549ea65e1eef4118/tenor.gif)
 
 ---
 
 ## 📸 Captures d'écran
 
-![Accueil Avant](https://raw.githubusercontent.com/phileastv/SC_Philou/main/images/2021/01/home-avant.png)
+![Accueil Avant](https://raw.githubusercontent.com/phileastv/SC_Philou/main/images/2021/01/home-avant.jpg)
 *Page d'accueil - avant*
 
-![Accueil après](https://raw.githubusercontent.com/phileastv/SC_Philou/main/images/2021/01/home-apres.png)
+![Accueil après](https://raw.githubusercontent.com/phileastv/SC_Philou/main/images/2021/01/home-apres.jpg)
 *Page d'accueil - après*
 
-![Produit avant](https://raw.githubusercontent.com/phileastv/SC_Philou/main/images/2021/01/produit-avant.png)
+![Produit avant](https://raw.githubusercontent.com/phileastv/SC_Philou/main/images/2021/01/produit-avant.jpg)
 *Page produit - avant*
 
-![Produit après](https://raw.githubusercontent.com/phileastv/SC_Philou/main/images/2021/01/produit-apres.png)
+![Produit après](https://raw.githubusercontent.com/phileastv/SC_Philou/main/images/2021/01/produit-apres.jpg)
 *Page produit - après*
 
-![Profil avant](https://raw.githubusercontent.com/phileastv/SC_Philou/main/images/2021/01/profil-avant.png)
+![Profil avant](https://raw.githubusercontent.com/phileastv/SC_Philou/main/images/2021/01/profil-avant.jpg)
 *Page profil - avant*
 
-![Profil après](https://raw.githubusercontent.com/phileastv/SC_Philou/main/images/2021/01/profil-apres.png)
+![Profil après](https://raw.githubusercontent.com/phileastv/SC_Philou/main/images/2021/01/profil-apres.jpg)
 *Page profil - après*
 
-![Top avant](https://raw.githubusercontent.com/phileastv/SC_Philou/main/images/2021/01/top-avant.png)
+![Top avant](https://raw.githubusercontent.com/phileastv/SC_Philou/main/images/2021/01/top-avant.jpg)
 *Top/Liste - avant*
 
-![Top après](https://raw.githubusercontent.com/phileastv/SC_Philou/main/images/2021/01/top-apres.png)
+![Top après](https://raw.githubusercontent.com/phileastv/SC_Philou/main/images/2021/01/top-apres.jpg)
 *Top/Liste - après*
 
 ---
