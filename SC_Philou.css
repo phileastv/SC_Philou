@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           SensCritique - Philou Edition
 @description    Un thème pour moderniser SensCritique, avec dark-mode, meilleure gestion images entre autres.
-@version        1.0.1
+@version        1.0.2
 @namespace      phileas.tv
 @licence  	    AGPL-3.0-or-later
 @supportURL     https://github.com/phileastv/SC_Philou
@@ -1017,7 +1017,6 @@
   .efcom-subComment > a,
   .elco-anchor,
   .elpa-product-collection .epri-score,
-  .elpo-rank-item,
   .elt-tracks-title .d-link-alt,
   .elth-thumbnail-heading,
   .ere-review-excerpt,
@@ -1029,7 +1028,6 @@
   .evs-venuesSchedules-day,
   .evs-venuesSchedules-showtimes-label,
   .fov-topic-text,
-  .header-navigation-main-item a,
   .header-user-name,
   .ivein-item-link,
   .ivein-item-name,
@@ -1560,16 +1558,12 @@
   /* G L O B A L */
   
   :root {
-    --paddingimgproduit: 45vh;
+    --paddingimgproduit: 50vh;
     --paddingprofil: 30vh;
     --taille-header: 145px;
     --taille-header-negatif: -145px;
     --taille-avatar-user: 60px; /* Default : 50px, recommandé : 60px */
-  }
-  
-  body {
-   font-family:'Space Grotesk', sans-serif;
-  }
+    }
   
   /* Avatar users plus gros */
   
@@ -1596,24 +1590,54 @@
   /*
   F O N T S
   */
+    
+  /* Titres Principaux des pages Home */
   
-  h1 {
+    body {
+      font-family:'Space Grotesk';
+    }
+    
+    h1 {
       font-family: 'Space Grotesk' !important;
       font-weight: bold;
     }
     
-    .pvi-product-year {
-      font-family: 'Space Mono';
-    }
-    
-    h4 {
+    /* Textes Globaux */
+    h2, h4, .d-link-alt, .ecap-resultsLabel-label, .ecap-products-resultsLabel, .ecap-trigger-label, a.header-register, a.uvi-ranking-anchor, a.d-heading3.esli-anchor, a.header-explorer, span.elth-thumbnail-heading, p.pvi-productDetails-resume {
       font-family: 'Space Grotesk' !important;
     }
     
-    .d-heading2-opt {
+    /* Font des boutons actions et navigation, .d-heading3 */
+    .ecap-resultsLabel-goTo, .pvi-product-year, .d-menu-item, .pco-social-action, a, button.d-link, a.eipa-anchor {
+	    font-family: 'Space Mono';
+    }
+    
+    /* Titres oeuvres */
+    .d-heading4.elpt-product-title {
+	    font-family: 'Space Grotesk';
+    }
+    
+    /* Titres secondaires sur page Home */
+    .d-heading2-opt, .laho-sectionTitle, .ecap-resultsLabel-label, strong.ecbi-billboard-title, div.d-heading3, span.d-heading3, a.uvi-ranking-title, h1.d-heading1 {
       font-family: 'Space Grotesk';
       color: white;
       font-weight: 600;
+    }
+    
+    ol.podium .elpo-item:nth-child(-n+3) .elpo-rank-item {
+        color: var(--green);
+    }
+    
+    /* Affichage Note */
+    svg.ecbi-billboard-score, pvi-scrating-value, span.erra-scouts {
+        font-family: 'Space Grotesk', boold;
+        font-weight: 900;
+    }
+    
+    /* Nom utilisateurs */
+    a.elfs-story-actor, a.d-link-alt, .nin-line-data a {
+        font-family: 'Space Grotesk';
+        font-weight: 600;
     }
     
     .d-rubric {
@@ -1621,15 +1645,16 @@
       margin-top: 50px;
     }
     
-    a .header-navigation-main-item {
+    a .header-navigation-main-item, li.header-navigation-main-item a {
       color: white;
     }
     
-    .d-heading2.ere-review-heading {
+    .d-heading2.ere-review-heading, p.elth-thumbnail-descr {
       font-family: 'IBM Plex Serif';
     }
     
-    .ere-review-excerpt {
+    /* Contenu par les utilisateurs (critiques, activités, statuts */
+    .ere-review-excerpt, .etco-comment-content, eshv-shout-box   {
       font-family: IBM Plex Serif;
       font-weight: 200;
     }
@@ -1672,10 +1697,26 @@
   /* Barre de recherhce ronde transparente et texte/icone blanc */
   
   /* Header semi-transparent */
+    
+    input._25jdusMm9PFEdy9TPVD0IK {
+        font-family: 'Space Grotesk';
+        letter-spacing: 1px;
+    }
   
   div.wrap, div.header-placeholder, header.header {
     background-color: linear-gradient(to bottom, var(--dark), transparent) !important;
   }
+    
+    /* Titre univers navigation blancs */
+    .header-navigation-main-item:not(:last-child) {
+        color: white !important;
+        text-shadow: 3px 3px 5px black !important;
+    }
+  
+  /* Logo warner blanc */
+  .header-navigation-main-item.header-navigation-main-item--warner img {
+	filter: invert();
+    }
   
   ._21m6Rw6g7EXxTEFyhikpLe {
     background-color: transparent;
@@ -1755,10 +1796,20 @@
     border-bottom: 0px;
   }
   
-  .elrua-useraction-action.scout {
-    font-family: 'Space Mono', monospace;
+  .elrua-useraction-action.scout, .elrua-useraction {
+    font-family: 'Space Grotesk', monospace;
     font-weight: bold;
   }
+    
+    .elco-anchor {
+        font-family: 'Space Grotesk';
+        color: white;
+        
+    }
+    
+    .elco-baseline {
+        font-family: 'Space Grotesk'
+    }
   
   /* Textes actions en vert */
   
@@ -1772,6 +1823,29 @@
   /*
       P A G E S    P R O D U I T
   */
+    
+    /* Boutons caroussel arrondis */
+    button.ecbi-billboard-btn {
+        border-radius: 25px !important;
+    }
+    
+    /* Padding sur produit sans image */
+    .pvi-hero.naked .pvi-hero-overlay {
+      padding-top: var(--taille-header) !important;
+    }
+    
+    /* Navigation sur Produit*/
+    .d-menu-item {
+        font-size: 16px;
+        letter-spacing: 2px;
+        padding: 20px;
+    }
+    
+    /* Bouton action review */
+    .ere-versus-review .ere-review-anchor, .ere-review-anchor {
+	    font-size: 13px;
+    }
+
   
   /* Etoiles remplacées */
   
@@ -1852,6 +1926,12 @@
   @media screen and (min-height: 930px) {
     .pvi-hero-content {
       /* padding-top: 210px; */
+      padding-top: var(--taille-header);
+    }
+  }
+    
+    @media screen and (min-width: 1100px) {
+        .pvi-hero-overlay {
       padding-top: var(--paddingimgproduit);
     }
   }
@@ -1873,6 +1953,7 @@
     margin-bottom: -145px;
     /* -webkit-mask-image: -webkit-linear-gradient(black, transparent 0%, black); */
   }
+    
   
   div.d-grid-extend:nth-child(1) {
     margin-bottom: -145px;
@@ -1901,14 +1982,14 @@
   /* Boutons admin positionnés */
   
   .pvi-hero-stats {
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 9999999;
   }
   
   .pvi-distrib-button {
     top: 0;
-    position: absolute;
+    position: fixed;
     right: 70px;
     z-index: 9999999;
   }
@@ -1984,12 +2065,23 @@
   .uco-cover-updateCover {
     top: var(--taille-header);
   }
+    
+  /* Listes */
+    .elth-thumbnail.by3 img, .elth-thumbnail {
+        border-radius: 25px;
+    }
   
   
   /* Page Profil - Avatar Rond */
   .uco-cover-avatar {
     border-radius: 65px;
     box-shadow: 5px 5px 20px black;
+  }
+    
+  .img.esli-avatar {
+      border-radius: 30px;
+      height: 6%;
+      width: 6%;
   }
   
   
@@ -2043,9 +2135,7 @@
       } 
   }
   
-  .pvi-hero-overlay {
-      padding-top: var(--paddingimgproduit);
-    }
+
     
     /* Petits boutons action sur page produit */
     
@@ -2106,6 +2196,10 @@
   .d-coverEdito {
     background: var(--dark);
   }
+    
+  span.elli-rank {
+      font-family: 'Space Mono';
+  }
   
   .d-grid.d-rubric-description {
     border-radius: 50px;
@@ -2115,6 +2209,14 @@
   .elcv-cover-updateCover {
     top: var(--taille-header);
   }
+    
+    /* Couleur box commentaire */
+    .etco-component-privacy {
+        padding-left: 10px;
+        border-radius: 15px;
+        color: white;
+        background: var(--dark);
+    }
   
   /* Titre des listes blanc */
   .elme-listTitle {
@@ -2130,5 +2232,6 @@
   
   .erra-global {
     color: white;
+    padding-left: 7px;
   }
   }
