@@ -48,7 +48,7 @@
 
 ---
 
-## ✨ Fonctionnalitées
+## ✨ Fonctionnalités
 
 🌚 Dark Mode
 
