@@ -14,7 +14,7 @@
    | ----- | ----- | ----- |
    | [🎯 Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=fr)   | [🎯 Firefox](https://addons.mozilla.org/fr/firefox/addon/styl-us/) | [🎯 Opera](https://addons.opera.com/fr/extensions/details/stylus/) |
 
-2. Rendez-vous sur [**cette page**](https://greasyfork.org/scripts/420410-senscritique-philou-edition/code/SensCritique%20-%20Philou%20Edition.user.css) et cliquez sur ***"Installer le style"***
+2. Rendez-vous sur [**cette page**](https://raw.githubusercontent.com/phileastv/SC_Philou/main/SC_Philou.user.css) et cliquez sur ***"Installer le style"***
 
 ![Gif Rigolo](https://media.tenor.com/images/d22170c90b16dfbf549ea65e1eef4118/tenor.gif)
 
