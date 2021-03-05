@@ -9,7 +9,7 @@
 @var range paddingimgproduit "Hauteur images - Produits" [55, 0, 100, 5, "vh"]
 @var range taille-img-accueil "Hauteur images - Accueil" [60, 0, 100, 5, "vh"]
 ==/UserStyle== */
-@-moz-document domain("senscritique.com")
+@-moz-document url-prefix("https://www.senscritique.com")
 {
 	/*  Thème personnalisé pour SensCritique
       Crée par Philéas
@@ -954,7 +954,6 @@
 	.etco-comment-form textarea,
 	.header,
 	.header-placeholder,
-	.header-user-ratings,
 	.hint-feed,
 	.hint-quotes,
 	.hint-rubric,
@@ -1850,13 +1849,10 @@
       D'ICI
   */
 	/* G L O B A L */
-	/* Avatar users plus gros */
+	/* Avatar users ronds */
 	.d-avatar
 	{
 		border-radius: 50px;
-		height: var(--taille-avatar-user);
-		width: var(--taille-avatar-user);
-		margin-right: 20px;
 	}
 
 	/* Marge commentaire plus grande */
@@ -2042,7 +2038,6 @@
 	/* Recherche autocomplete - fiche plus grandes */
 	._1pDGS5WNnRtxCcfwOU55mo:not(:last-child)
 	{
-		margin-bottom: 10px;
 		font-size: 10pt;
 	}
 
@@ -2262,6 +2257,16 @@
 		border-radius: 25px !important;
 	}
 
+	.pvi-scouts-loading
+	{
+		background-color: var(--dark) !important;
+	}
+
+	.d-loader-circular-small
+	{
+		background: url(https://static.senscritique.com/img/layout/icons/misc/loader-circular-small.gif?202011101789412) no-repeat;
+	}
+
 	/* Padding sur produit sans image */
 	.pvi-hero.naked .pvi-hero-overlay
 	{
@@ -2290,7 +2295,6 @@
 		fill: var(--green);
 		height: 35px;
 		width: 35px;
-		animation: 0.3s ease-in-out 0s 1 growIn;
 	}
 
 	.eins-rate
@@ -2471,6 +2475,12 @@
 	/*
       H O M E
   	*/
+	/* Bouton Filtre Feed Actif Blanc */
+	.hoin-feed-filter.active
+	{
+		color: white;
+	}
+
 	/* Grandes images sur Home Page */
 	.ecbi-billboard-container
 	{
@@ -2520,6 +2530,12 @@
 		color: white;
 	}
 
+	/* Carroussel video bien placé */
+	.d-video-carousel__wrapper
+	{
+		top: var(--taille-header);
+	}
+
 	/*
   P R O F I L 
   */
@@ -2556,6 +2572,7 @@
 	.d-button.first-child,
 	.d-button.last-child
 	{
+		color: white;
 		margin-right: 10px;
 		background: var(--dark);
 		border: 2px solid var(--lightgrey);
@@ -2755,11 +2772,13 @@
 		height: var(--paddingimgproduit);
 		margin-bottom: -250px;
 		-webkit-mask-image: -webkit-linear-gradient(black, transparent 0%, black 25%);
+		pointer-events: none;
 	}
 
 	.d-coverEdito
 	{
 		background: var(--dark);
+		pointer-events: none;
 	}
 
 	span.elli-rank

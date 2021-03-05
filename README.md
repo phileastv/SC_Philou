@@ -2,7 +2,7 @@
 
 #### (WIP) Un thème CSS pour moderniser [SensCritique](https://www.senscritique.com/), avec un dark-mode et des images mises en valeur
 
-*Ce projet est un fork du [thème sombre de Zhyar](uso-archive.surge.sh/?author=zhyar&sort=undefined&style=147711).*
+*Ce projet est un fork du [thème sombre de Zhyar](https://uso-archive.surge.sh/?author=zhyar&sort=undefined&style=147711).*
 
 ---
 
